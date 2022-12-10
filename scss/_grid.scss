@@ -28,5 +28,16 @@ $s-device: 480px;
   }
 }
 
+//Função do grid
+
+@function grid($col, $offset: false){
+  $width: $col / $col * 100 + "%";
+  $result: calc(#{$width} - #{$gutter});
+  @if $offset == offset{
+    $gutter: $gutter / 2;
+    $result: calc(#{$width} + #{$gutter});
+  }
+  @return $result;
+}
  
  
