@@ -12,3 +12,11 @@ $fonte-2: 'Aref Ruqaa', serif;
 @function em($pixel, $contexto: 16){
   @return $pixel / $contexto + em;
 }
+
+@mixin tipo-1($size){
+  font-family: $fonte-1;
+  @if $size == 18{
+    font-size: em(18);
+    line-height: em(30, 18);
+  }
+}
