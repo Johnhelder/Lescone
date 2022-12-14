@@ -12,6 +12,11 @@ img{
   max-width: 100%;
 }
 
+p{
+  display: block;
+  max-width: 100%;
+}
+
 .titulo{
   @include tipo-1(18);
   text-transform: uppercase;
