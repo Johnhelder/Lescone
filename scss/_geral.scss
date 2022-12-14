@@ -2,4 +2,7 @@ body{
   background: $bege-claro;
   border: 10px solid $bege-medio;
   color: $cinza;
+  @include d(s){
+    border: nome;
+  }
 }
